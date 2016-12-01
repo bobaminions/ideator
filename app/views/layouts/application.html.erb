@@ -7,8 +7,47 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  
+  <!-- Adding bootstrap nav in minions-app -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="row clearfix">
+        
+          <div class="col-sm-3 col-xs-12 col__logo colo__logo--primary">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                  <img alt="Brand" src="../assets/images/minions-logo.png" />
+                </a>
+              </div>
+          </div>
+          
+          <div class="col-sm-9 col-xs-12 col__nav colo__nav--primary">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+              </div>
 
-<%= yield %>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="#">All Ideas</a></li>
+                  <li><a href="#">Inspire Me</a></li>
+                  <li><a href="#">About</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->    
+          </div>
+          
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav><!-- /.#Adding bootstrap nav in minions-app -->
+
+  <%= yield %>
 
 </body>
 </html>
