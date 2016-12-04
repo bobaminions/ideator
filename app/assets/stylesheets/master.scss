@@ -1,0 +1,42 @@
+/*
+** Author :: Bobaminions
+** Date :: 04/12/2016
+** Custom sass/scss file to store style rules for ideator application
+*/
+
+// Rails by default uses SASS as it's cascading style sheets (CSS) preprocessor
+// SASS extends static/dead css with loads of features which makes it lively
+// We can use variables, @mixins, function, nested structure, loops, control statements, even if we can use OOPS concept
+
+/*
+** Declaring variables to make codes reusale
+*/
+
+// Typography variables
+$font-primary: 'Open Sans', sans-serif;  
+$font-secondary: 'Dosis', sans-serif;
+
+// Theme color variables
+$color-black: #000000;
+$color-white: #ffffff;
+$color-main-blue: #337ab7;
+
+/*
+** Styling application elements
+*/
+
+html, body {
+    font-family: $font-primary;
+}
+
+.navbar-default {
+    background: $color-white;
+    font-family: $font-secondary;
+}
+
+.navbar-default .navbar-brand {
+    color: $color-main-blue;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}

@@ -5,6 +5,9 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!-- Importing web fonts from Google fonts library -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,600,700|Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <!-- /.#Importing web fonts from Google fonts library -->
 </head>
 <body>
   
@@ -13,37 +16,24 @@
     <div class="container container-fluid">
       <div class="row clearfix">
         
-          <div class="col-sm-3 col-xs-12 col__logo col__logo--primary">
-              <div class="logo logo--primary">
-                <h1 class="logo__wrap">
-                  <a href="#">
-                    <%= image_tag 'minions-logo.png', :class => "media media--responsive media--vtop" %>
-                  </a>
-                </h1>
-              </div>
-          </div>
-          
-          <div class="col-sm-9 col-xs-12 col__nav col__nav--primary">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Ideator</a>
+        </div>
 
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                  <li><a href="#">All Ideas</a></li>
-                  <li><a href="#">Inspire Me</a></li>
-                  <li><a href="#">About</a></li>
-                </ul>
-              </div><!-- /.navbar-collapse -->    
-          </div>
-          
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">All Ideas</a></li>
+            <li><a href="#">Inspire Me</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
       </div>
     </div><!-- /.container-fluid -->
   </nav><!-- /.#Adding bootstrap nav in minions-app -->
