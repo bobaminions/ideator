@@ -40,3 +40,38 @@ html, body {
     font-weight: 100;
     letter-spacing: 2px;
 }
+
+.navbar-collapse {
+    @media (min-width: 768px) {
+        float: right;
+    }
+}
+
+.navbar-default .navbar-brand {
+    @media (min-width: 768px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: auto;
+        font-family: $font-secondary;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 32px;
+        transition: all linear 0.35s;
+    }
+}
+
+.navbar-default .navbar-nav > li > a {
+    @media (min-width: 768px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+        color: $color-black;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all linear 0.35s;
+        
+        &:hover {
+            color: $color-main-blue;
+        }
+    }
+}
