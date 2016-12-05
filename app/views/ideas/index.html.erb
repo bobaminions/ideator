@@ -1,10 +1,13 @@
-<section class="ideator__block ideator__block--intro text-center">
+<section class="ideator__block ideator__block--intro">
     <div class="ideator__block-row">
         
         <div class="container">
             <div class="row clearfix">
                 <div class="col-xs-12">
-                    <h1>This is my first app ever and I’m super excited to become a coder</h1>
+                    <% @ideas.each do | idea | %>
+                        <h3><%= idea.description %></h3>
+                        <h4><%= idea.author %></h4>
+                    <% end %>
                 </div>
             </div>
         </div>
