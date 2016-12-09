@@ -48,6 +48,10 @@
                                     <p><%= idea.description %></p>
                                     <small><%= idea.author %></small>
                                 </blockquote>
+                                <div class="btn-group ideator__btn-group ideator__btn-group--action" role="group">
+                                    <%= link_to 'Revise', edit_idea_path(idea), class: 'btn btn-sm btn-success' %>
+                                    <%= link_to 'Delete', idea_path(idea), class: 'btn btn-sm btn-danger', method: :delete, data: {confirm: "Are you sure?"} %>
+                                </div>
                             </div>
                         </div>
                     <% end %>

@@ -1,0 +1,21 @@
+<!-- Template to edit ideas -->
+<section class="ideator__block ideator__block--editForm">
+    <div class="ideator__block-row">
+        
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-xs-12">
+                    <header class="ideator__block--header ideator__block--title">
+                        <h1>Revise Idea</h1>
+                    </header>
+                    <%= simple_form_for @idea, method: :patch do | f | %>
+                        <%= f.input :description %>
+                        <%= f.input :author %>
+                        <%= f.submit 'Submit', class: 'btn btn-primary' %>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section><!-- /.#Template to edit ideas -->
