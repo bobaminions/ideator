@@ -105,3 +105,14 @@ html, body {
     bottom: 0;
     height: $height-footer;
 }
+
+/* Style rules for blocks */
+/* Namespacing */
+$ns: 'ideator';
+.#{$ns} {
+    &__block {
+        &:not(:last-of-type) {
+            margin-bottom: 2.5rem;
+        }
+    }
+}
