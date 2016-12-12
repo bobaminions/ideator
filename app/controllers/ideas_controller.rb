@@ -1,7 +1,8 @@
 class IdeasController < ApplicationController
     #Main method to be called when user browses the home page
     def index
-        @ideas = Idea.all
+        #@ideas = Idea.all.paginate(:page => params[:page], :per_page => 5)
+        @ideas = Idea.order('created_at DESC').paginate(:page => params[:page], :per_page => 5)
     end
     
     #Method to create new Idea
