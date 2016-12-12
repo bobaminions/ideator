@@ -10,7 +10,7 @@ class IdeasController < ApplicationController
         if @idea.valid?
             #
         else
-            #
+            flash[:alert] = "Invalid Idea. Please try again!"
         end
         
         redirect_to root_path

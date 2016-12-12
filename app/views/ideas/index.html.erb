@@ -19,7 +19,7 @@
   </div>
 </div>
 
-<section class="ideator__block ideator__block--form">
+<section class="ideator__block ideator__block--form text-center">
     <div class="ideator__block-row">
         
         <div class="container">
@@ -32,6 +32,17 @@
             </div>
         </div>
         
+    </div>
+</section>
+
+<section class="ideator__block ideator__block--form text-center">
+    <div class="ideator__block-row">
+        
+        <div class="container">
+            <% if flash[:alert] %>
+                <div class="ideator__message ideator__message--big ideator__message--error"><%= flash[:alert] %></div>
+            <% end %>
+        </div>
     </div>
 </section>
 

@@ -20,6 +20,7 @@ $font-secondary: 'Dosis', sans-serif;
 $color-black: #000000;
 $color-white: #ffffff;
 $color-main-blue: #337ab7;
+$color-red: #cc3333;
 
 // Box model / layouts
 $height-footer: 45px;
@@ -106,13 +107,35 @@ html, body {
     height: $height-footer;
 }
 
-/* Style rules for blocks */
+/* Style rules for Ideator app */
 /* Namespacing */
 $ns: 'ideator';
 .#{$ns} {
+    /* Blocks */
     &__block {
         &:not(:last-of-type) {
             margin-bottom: 2.5rem;
+        }
+    }
+    
+    /* Messages */
+    &__message {
+        font-family: "Dosis", sans-serif;
+        font-style: italic;
+        
+        /* Big size message */
+        &--big {
+            font-size: 40px;
+        }
+        
+        /* Small size message */
+        &--small {
+            font-size: 16px;
+        }
+        
+        /* Error message */
+        &--error {
+            color: $color-red;           
         }
     }
 }
